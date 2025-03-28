@@ -97,9 +97,10 @@ body {
 }
 
 
+
 .btn {
     display: block;
-    width: 80%;
+    width: 200px;
     margin: 10px auto;
     padding: 10px;
     background: #009879;
