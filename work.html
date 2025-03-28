@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="banner">
+		<a href = "./index.html">
+        <div class="info">
+            <img src="./images/logo.png" class="logo">
+        </div>
+		</a>
+         <!-- Калькулятор для програміста -->
+		 <div class="calculator">
+			<!-- Поле вводу для числа -->
+			<input type="text" class="calc-input" id="calc-input" placeholder="Введіть число" />
+		
+			<!-- Виведення значень в різних системах числення -->
+			<div class="calc-info">
+				<p>HEX <span id="hex-value">0</span></p>
+				<p>DEC <span id="dec-value">0</span></p>
+				<p>OCT <span id="oct-value">0</span></p>
+				<p>BIN <span id="bin-value">0</span></p>
+			</div>
+		
+			<!-- Кнопки калькулятора -->
+			<div class="calc-buttons">
+				<button class="btn-op" data-action="SHIFT-LEFT">&laquo;</button>
+				<button class="btn-op" data-action="SHIFT-RIGHT">&raquo;</button>
+				<button class="btn-op" data-action="C">C</button>
+				<button class="btn-op" data-action="DEL">⌫</button>
+		
+				<button class="btn-num" data-value="A">A</button>
+				<button class="btn-num" data-value="B">B</button>
+				<button class="btn-num" data-value="C">C</button>
+				<button class="btn-num" data-value="D">D</button>
+				<button class="btn-num" data-value="E">E</button>
+				<button class="btn-num" data-value="F">F</button>
+
+		
+				
+				<button class="btn-op" data-action="DIVIDE">&divide;</button>
+		
+				
+				<button class="btn-op" data-action="MULTIPLY">&times;</button>
+		
+				<button class="btn-num" data-value="1">1</button>
+				<button class="btn-num" data-value="2">2</button>
+				<button class="btn-num" data-value="3">3</button>
+				<button class="btn-num" data-value="4">4</button>
+				<button class="btn-num" data-value="5">5</button>
+				<button class="btn-num" data-value="6">6</button>
+				<button class="btn-num" data-value="7">7</button>
+				<button class="btn-num" data-value="8">8</button>
+				<button class="btn-num" data-value="9">9</button>
+				<button class="btn-num" data-value="0">0</button>
+				<button class="btn-op" data-action="MINUS">&minus;</button>
+		
+			
+				<button class="btn-op" data-action="PLUS-MINUS">+/−</button>
+				
+				<button class="btn-op" data-action="PLUS">+</button>
+				<button class="btn-equal">=</button>
+			</div>
+		</div>
+		
+       </div>
+    </div>
+</body>
+</html>
