@@ -1,37 +1,29 @@
 <!DOCTYPE html>
+<html lang="uk">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
+    <title>Профіль</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <div class="banner">
-		<div class="info">
-			<img  src="./images/logo.png" class="logo">
-			<ul>
-				<li><a href="./prof.html">Профіль користувача</a></li>
-				<li><a href="./about.html">Про додаток </a></li>
-				<li><a href="./work.html">Робоча сторінка додатка</a></li>
-			</ul>
-		</div>
-
-		<div class="content">
-			<hl>Профіль користувача</hl>
-			<table class="profile-table">
-    			<tr>
-        			<th>Ім'я користувача:</th>
-       			 	<td>Корольов Юрій</td>
-    			</tr>
-   		 		<tr>
-        			<th>Email користувача:</th>
-        			<td>tonybumboni@gmail.com</td>
-    			</tr>
-    			<tr>
-        			<th>Дата реєстрації</th>
-        			<td>28.03.2025</td>
-    			</tr>
-			</table>
-		</div>
-	</div>
+        <div class="info">
+            <a href ="index.html"><img src="./images/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="./prof.html">Профіль користувача</a></li>
+                <li><a href="./about.html">Про додаток</a></li>
+                <li><a href="./work.html">Робоча сторінка додатка</a></li>
+                <li><a href="#" id="logout">Вийти</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <h1>Профіль користувача</h1>
+            <table class="profile-table"></table>
+        </div>
+    </div>
+    <script src="./js/model.js"></script>
+    <script src="./js/view.js"></script>
+    <script src="./js/controller.js"></script>
+    <script src="./js/prof.js"></script>
 </body>
 </html>

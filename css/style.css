@@ -3,53 +3,6 @@ body {
     padding: 0;
 }
 
-.calculator {
-    width: 300px;
-    margin: auto;
-    padding: 20px;
-    background: #2c3e50;
-    border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
-}
-
-/* Стилі для поля вводу числа */
-.calc-input {
-    width: 100%;
-    padding: 15px;
-    background: #34495e;
-    color: #fff;
-    font-size: 24px;
-    text-align: right;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-    box-sizing: border-box;
-}
-
-
-.calc-display {
-    width: 100%;
-    padding: 15px;
-    background: #34495e;
-    color: #fff;
-    font-size: 24px;
-    text-align: right;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.calc-info p {
-    color: #fff;
-    font-size: 14px;
-    margin: 5px 0;
-}
-
-.calc-buttons {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-}
 
 .btn-op, .btn-num {
     background: #1abc9c;
@@ -95,8 +48,6 @@ body {
 #hex-value, #dec-value, #oct-value, #bin-value {
     font-weight: bold;
 }
-
-
 
 .btn {
     display: block;
@@ -279,3 +230,5 @@ body {
         margin: 10px 0;
     }
 }
+
+

@@ -1,0 +1,102 @@
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/time.jpg) no-repeat fixed;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs input[type="radio"] {
+  display: none;
+}
+
+.tabs label {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+  background: #eee;
+}
+
+.tabs input:checked + label {
+  background: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #3498db;
+}
+
+.content {
+  display: none;
+  padding: 15px;
+}
+
+#basic:checked ~ .basic-content,
+#prog:checked ~ .prog-content {
+  display: block;
+}
+
+.display {
+  background: #222;
+  color: #0f0;
+  font-size: 20px;
+  text-align: right;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  min-height: 30px;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 15px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background: #ddd;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttons button:hover {
+  background: #ccc;
+}
+
+.op { background: #f7b731; }
+.op:hover { background: #e1a325; }
+
+@media (max-width: 480px) {
+  .buttons {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f4f4f4;
+}
+
+.logo {
+  height: 50px;
+  cursor: pointer;
+}

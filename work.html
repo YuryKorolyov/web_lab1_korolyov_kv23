@@ -1,72 +1,49 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="ru">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>website</title>
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Калькулятор</title>
+  <link rel="stylesheet" href="./css/calc.css">
 </head>
 <body>
-    <div class="banner">
-		<a href = "./index.html">
-        <div class="info">
-            <img src="./images/logo.png" class="logo">
-        </div>
-		</a>
-         <!-- Калькулятор для програміста -->
-		 <div class="calculator">
-			<!-- Поле вводу для числа -->
-			<input type="text" class="calc-input" id="calc-input" placeholder="Введіть число" />
-		
-			<!-- Виведення значень в різних системах числення -->
-			<div class="calc-info">
-				<p>HEX <span id="hex-value">0</span></p>
-				<p>DEC <span id="dec-value">0</span></p>
-				<p>OCT <span id="oct-value">0</span></p>
-				<p>BIN <span id="bin-value">0</span></p>
-			</div>
-		
-			<!-- Кнопки калькулятора -->
-			<div class="calc-buttons">
-				<button class="btn-op" data-action="SHIFT-LEFT">&laquo;</button>
-				<button class="btn-op" data-action="SHIFT-RIGHT">&raquo;</button>
-				<button class="btn-op" data-action="C">C</button>
-				<button class="btn-op" data-action="DEL">⌫</button>
-		
-				<button class="btn-num" data-value="A">A</button>
-				<button class="btn-num" data-value="B">B</button>
-				<button class="btn-num" data-value="C">C</button>
-				<button class="btn-num" data-value="D">D</button>
-				<button class="btn-num" data-value="E">E</button>
-				<button class="btn-num" data-value="F">F</button>
+  <header class="header">
+    <a href="index.html">
+      <img src="./images/logo.png" alt="Логотип" class="logo">
+    </a>
+  </header>
 
-		
-				
-				<button class="btn-op" data-action="DIVIDE">&divide;</button>
-		
-				
-				<button class="btn-op" data-action="MULTIPLY">&times;</button>
-		
-				<button class="btn-num" data-value="1">1</button>
-				<button class="btn-num" data-value="2">2</button>
-				<button class="btn-num" data-value="3">3</button>
-				<button class="btn-num" data-value="4">4</button>
-				<button class="btn-num" data-value="5">5</button>
-				<button class="btn-num" data-value="6">6</button>
-				<button class="btn-num" data-value="7">7</button>
-				<button class="btn-num" data-value="8">8</button>
-				<button class="btn-num" data-value="9">9</button>
-				<button class="btn-num" data-value="0">0</button>
-				<button class="btn-op" data-action="MINUS">&minus;</button>
-		
-			
-				<button class="btn-op" data-action="PLUS-MINUS">+/−</button>
-				
-				<button class="btn-op" data-action="PLUS">+</button>
-				<button class="btn-equal">=</button>
-			</div>
-		</div>
-		
-       </div>
+  <div class="container">
+    <div class="tabs">
+      <input type="radio" name="mode" id="basic" checked>
+      <label for="basic">Обычный</label>
+      <input type="radio" name="mode" id="prog">
+      <label for="prog">Программист</label>
     </div>
+
+    <div class="content basic-content">
+      <div class="display" id="basic-display">0</div>
+      <div class="buttons" id="basic-buttons">
+        <button>7</button><button>8</button><button>9</button><button class="op">/</button>
+        <button>4</button><button>5</button><button>6</button><button class="op">*</button>
+        <button>1</button><button>2</button><button>3</button><button class="op">-</button>
+        <button>0</button><button>.</button><button>=</button><button class="op">+</button>
+      </div>
+    </div>
+
+    <div class="content prog-content">
+      <div class="display" id="prog-display">0</div>
+      <div class="buttons" id="prog-buttons">
+        <button>AND</button><button>OR</button><button>XOR</button><button>NOT</button>
+        <button>0</button><button>1</button><button>2</button><button>3</button>
+        <button>4</button><button>5</button><button>6</button><button>7</button>
+        <button>8</button><button>9</button><button>A</button><button>B</button>
+        <button>C</button><button>D</button><button>E</button><button>F</button>
+        <button class="op">BIN</button><button class="op">OCT</button><button class="op">DEC</button><button class="op">HEX</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/script.js"></script>
 </body>
 </html>
